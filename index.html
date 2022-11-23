@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bag shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<h1>Bag Shop</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Bags</h2>
+
+			<div class="single-item">
+				<img src="img/bag1.jpg">
+				<div class="si-content">
+					<h3>Blue bag</h3>
+					<p class="price">$30</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/bag2.jpg">
+				<div class="si-content">
+					<h3>Pearl bag</h3>
+					<p class="price">$20</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/bag3.jpg">
+				<div class="si-content">
+					<h3>White bags</h3>
+					<p class="price">$25</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Cart</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
